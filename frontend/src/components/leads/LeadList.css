@@ -1,0 +1,121 @@
+.leads-list {
+  width: 80%;
+  min-width: 320px;
+  margin: 150px auto 40px auto; /* Add top margin for navbar */
+  background:#e3f0ff ;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
+  padding: 2.5rem 1.2rem 2rem 1.2rem;
+  overflow-x: auto;
+}
+
+.leads-list .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.leads-list h2 {
+  color: #2d3748;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  background: #f7fafc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  padding: 0.9rem 1.1rem;
+  text-align: left;
+}
+
+.table th {
+  background: #e3f0ff;
+  color: #2b6cb0;
+  font-weight: 600;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #f1f5f9;
+}
+
+.table tbody tr:hover {
+  background: #e0e7ef;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border-radius: 12px;
+  font-size: 0.95em;
+  font-weight: 500;
+  color: #fff;
+}
+
+.status-new { background: #3182ce; }
+.status-contacted { background: #38b2ac; }
+.status-qualified { background: #ecc94b; color: #2d3748; }
+.status-proposal\ sent { background: #f6ad55; color: #2d3748; }
+.status-won { background: #48bb78; }
+.status-lost { background: #e53e3e; }
+
+.btn {
+  padding: 0.5rem 1.1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-right: 0.5rem;
+}
+
+.btn-primary {
+  background: #3182ce;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.btn-danger {
+  background: #e53e3e;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #c53030;
+}
+
+.btn-small {
+  padding: 0.3rem 0.7rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .leads-list {
+    padding: 1.2rem 0.2rem;
+    max-width: 99vw;
+  }
+  .table {
+    min-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .leads-list {
+    padding: 1rem 1rem;
+    font-size: 0.95rem;
+    width: 90%;
+  }
+  .table {
+    min-width: 500px;
+  }
+}

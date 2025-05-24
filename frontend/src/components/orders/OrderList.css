@@ -1,0 +1,122 @@
+.orders-list {
+  width: 80%;
+  min-width: 320px;
+  margin: 150px auto 40px auto; /* Add top margin for navbar */
+  background:#e3f0ff ;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
+  padding: 2.5rem 1.2rem 2rem 1.2rem;
+  overflow-x: auto;
+}
+
+.orders-list .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.orders-list h2 {
+  color: #2d3748;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  background: #fffaf3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  padding: 0.9rem 1.1rem;
+  text-align: left;
+}
+
+.table th {
+  background: #fff7e3;
+  color: #ff9800;
+  font-weight: 600;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #fff3e0;
+}
+
+.table tbody tr:hover {
+  background: #ffe0b2;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border-radius: 12px;
+  font-size: 0.95em;
+  font-weight: 500;
+  color: #fff;
+}
+
+.status-order\ received { background: #ffb74d; color: #2d3748; }
+.status-in\ development { background: #64b5f6; }
+.status-ready\ to\ dispatch { background: #81c784; }
+.status-dispatched { background: #4caf50; }
+
+.btn {
+  padding: 0.5rem 1.1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-right: 0.5rem;
+}
+
+.btn-primary {
+  background: #ffb74d;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #ffa726;
+}
+
+.btn-danger {
+  background: #e53e3e;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #c53030;
+}
+
+.btn-small {
+  padding: 0.3rem 0.7rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .orders-list {
+    padding: 1.2rem 0.2rem;
+    max-width: 99vw;
+  }
+  .table {
+    min-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .orders-list {
+      padding: 1rem 1rem;
+      font-size: 0.95rem;
+      width: 90%;
+  }
+  .table {
+    min-width: 500px;
+  }
+  .header h2 {
+    font-size: 1.2rem;
+  }
+}
